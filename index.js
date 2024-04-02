@@ -14,7 +14,7 @@ export async function handler(event) {
         {"In three words I can sum up everything I've learned about life: it goes on." : "Robert Frost"},
         {"If you tell the truth, you don't have to remember anything." : "Mark Twain"},
         ];
-    
+    // scalable api quotes
     function getRandomQuote() {
         const index = Math.floor(Math.random() * quotes.length);
         return quotes[index];
@@ -25,7 +25,7 @@ export async function handler(event) {
         headers:{
             "Content-Type": "application/json"
         },
-        
+
         body: JSON.stringify(getRandomQuote())
     }
 
