@@ -1,4 +1,6 @@
-export async function handler(event) {
+const handler = async (event) => {
+
+    
     const quotes = [
         {"To live is the rarest thing in the world. Most people exist, that is all." : "Oscar Wilde"},
         {"Without music, life would be a mistake." : "Friedrich Nietzsche"},
@@ -31,3 +33,5 @@ export async function handler(event) {
 
     return response;
 }
+
+module.exports = { handler };
